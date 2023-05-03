@@ -7,7 +7,7 @@ let closedPage;
 function setup() {
   
   //forsøg at oprette forbindelse til MQTT serveren 
-  client = mqtt.connect('wss://mqtt.nextservices.dk')
+  client = mqtt.connect('ws://test.mosquitto.org:8080')
 
   //hvis forbindelsen lykkes kaldes denne funktion
   client.on('connect', (m) => {
